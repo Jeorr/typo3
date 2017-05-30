@@ -1,0 +1,12 @@
+tt_content {
+   jumbotron_jumbotron =< lib.contentElement
+   jumbotron_jumbotron {
+      templateName = jumbotron.html
+   }
+}
+
+lib.contentElement {
+    templateRootPaths {
+       200 = EXT:jumbotron/Resources/Private/Templates/
+    }
+}

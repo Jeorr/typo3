@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-02-27T10:06:32Z" product-name="jumbotron">
+		<header/>
+		<body>
+			<trans-unit id="jumbotron_jumbotron.wizard.title" xml:space="preserve">
+				<source>Jumbotron</source>
+			</trans-unit>
+                        <trans-unit id="jumbotron_jumbotron.wizard.description" xml:space="preserve">
+				<source>Test content element</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
