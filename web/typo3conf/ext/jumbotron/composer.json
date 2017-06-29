@@ -1,0 +1,24 @@
+{
+  "name": "jumbotron/jumbotron",
+  "type": "typo3-cms-extension",
+  "description": "jumbotron",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "article",
+    "news"
+  ],
+  "license": [
+    "GPL-2.0+"
+  ],
+  "autoload": {
+    "psr-4": {
+      "Jumbotron\\Jumbotron\\": "Classes"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Jumbotron\\Jumbotron\\Tests\\": "Tests"
+    }
+  }
+}

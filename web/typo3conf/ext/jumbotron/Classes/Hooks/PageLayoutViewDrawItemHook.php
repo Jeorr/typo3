@@ -1,11 +1,9 @@
 <?php
 namespace Jumbotron\Jumbotron\Hooks;
 
-/**
- * Hook to display verbose information about the felogin plugin
- */
-class PageLayoutViewDrawItemHook implements \TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface,Ttt
+class PageLayoutViewDrawItemHook implements \TYPO3\CMS\Backend\View\PageLayoutViewDrawItemHookInterface
 {
+
     /**
      * Preprocesses the preview rendering of a content element.
      *
@@ -19,7 +17,14 @@ class PageLayoutViewDrawItemHook implements \TYPO3\CMS\Backend\View\PageLayoutVi
     {
         if ($row['CType'] === 'jumbotron_jumbotron') {
             $drawItem = false;
-            $itemContent .= '<p>We can change our preview here!</p>';
+
+            $itemContent .= '<div class="jumbotron">';
+            $itemContent .= '<h1 class="display-3">' . $row['header'] . '</h1>';
+            $itemContent .= '<p class="lead">' . $row['subheader'] . '</p>';
+            $itemContent .= '<hr class="my-4">';
+            $itemContent .= '<div class="body-text">' . html_entity_decode($row['bodytext']) . '</div>';
+            $itemContent .= '<p class="lead"><a class="btn btn-primary btn-lg" href="' . $row['button_link'] . '" role="button">' . $row['button_text'] . '</a></p>';
+            $itemContent .= '</div>';
         }
     }
 }

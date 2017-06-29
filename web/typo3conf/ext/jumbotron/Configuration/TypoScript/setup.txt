@@ -1,12 +1,17 @@
 tt_content {
-   jumbotron_jumbotron =< lib.contentElement
-   jumbotron_jumbotron {
-      templateName = Jumbotron
-   }
-}
-
-lib.contentElement {
-    templateRootPaths {
-       200 = EXT:jumbotron/Resources/Private/Templates/
+    jumbotron_jumbotron =< lib.contentElement
+    jumbotron_jumbotron {
+        templateName = jumbotron
+        templateRootPaths {
+           200 = EXT:jumbotron/Resources/Private/Templates/
+        }
+        dataProcessing {
+            1 = Jumbotron\Jumbotron\DataProcessing\JumbotronProcessor
+            1 {
+               useHere = theConfigurationOfTheDataProcessor
+            }
+        }
     }
 }
+
+page.includeCSS.jumbotron = EXT:jumbotron/Resources/Public/Css/bootstrap.css

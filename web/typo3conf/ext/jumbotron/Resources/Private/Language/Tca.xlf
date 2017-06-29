@@ -9,6 +9,15 @@
                         <trans-unit id="jumbotron_jumbotron.wizard.description" xml:space="preserve">
 				<source>Test content element</source>
 			</trans-unit>
+                        <trans-unit id="jumbotron_jumbotron.palette.button" xml:space="preserve">
+				<source>Button settings</source>
+			</trans-unit>
+                        <trans-unit id="jumbotron_jumbotron.palette.button_link" xml:space="preserve">
+				<source>Button link</source>
+			</trans-unit>
+                        <trans-unit id="jumbotron_jumbotron.palette.button_text" xml:space="preserve">
+				<source>Button text</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
